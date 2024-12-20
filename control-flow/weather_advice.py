@@ -1,5 +1,6 @@
 #Program that provieds clothing recommendations according to the given weather
 #Promt user for the weatheer input
+
 weather = (input("What's the weather like today?,(sunny/rainy/cold): ")).lower()
 
 if weather == "sunny":
