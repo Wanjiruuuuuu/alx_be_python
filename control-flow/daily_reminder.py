@@ -21,7 +21,7 @@ match priority:
 # Add time sensitivity if applicable
 if priority == "low":
     if time_bound == "yes":
-        note += " that requires immediate attention today!"
+        reminder += " that requires immediate attention today!"
     elif time_bound == "no":
         note += " Consider completing it when you have free time."
     else:
@@ -30,7 +30,7 @@ else:
     if time_bound == "yes":
         reminder += " that requires immediate attention today!"
     elif time_bound == "no":
-        reminder += " Consider completing it when you have free time."
+        note += " Consider completing it when you have free time."
     else:
         reminder += " Time sensitivity was not specified correctly."
 
