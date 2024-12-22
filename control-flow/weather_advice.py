@@ -10,7 +10,7 @@ elif weather == "rainy":
     print("Don't forget your umbrella and raincoat.")
 
 elif weather == "cold":
-    print("Make sure you wear a warm coat and a scarf. ")
+    print("Make sure to wear a warm coat and a scarf. ")
 
 else :
     print("Sorry, I dont have recommendations for this weather.")
