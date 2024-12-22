@@ -10,11 +10,11 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Process task with match case
 match priority:
     case "high":
-        reminder = f"'Reminder: {task}' is a high priority task."
+        reminder = f"Reminder: '{task}' is a high priority task."
     case "medium":
-        reminder = f"'Reminder: {task}' is a medium priority task."
+        reminder = f"Reminder: '{task}' is a medium priority task."
     case "low":
-        note = f"'Note: {task}' is a low priority task."
+        note = f"Note: '{task}' is a low priority task."
     case _:
         reminder = "Invalid priority level entered."
 
