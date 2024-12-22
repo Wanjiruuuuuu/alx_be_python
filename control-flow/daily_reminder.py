@@ -35,7 +35,7 @@ else:
         reminder += " Time sensitivity was not specified correctly."
 
 # Print the customized reminder or note
-if priority == "low":
+if time_bound == "low":
     print("\n", note)
 else:
     print("\n", reminder)
