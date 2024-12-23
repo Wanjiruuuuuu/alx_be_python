@@ -7,40 +7,28 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-# Process task with match case
+# Process task and provide a single output
 match priority:
     case "high":
-        reminder = f"'{task}' is a high priority task."
-        
+        if time_bound == "yes":
+            print(f"\nReminder: '{task}' is a high priority task that requires immediate attention today!")
+        elif time_bound == "no":
+            print(f"\nNote: '{task}' is a high priority task that can be completed when you have free time.")
+        else:
+            print(f"\nReminder: '{task}' is a high priority task with an unspecified time sensitivity.")
     case "medium":
-        reminder = f"'{task}' is a medium priority task."
-        
+        if time_bound == "yes":
+            print(f"\nReminder: '{task}' is a medium priority task that requires immediate attention today!")
+        elif time_bound == "no":
+            print(f"\nNote: '{task}' is a medium priority task that can be completed when you have free time.")
+        else:
+            print(f"\nReminder: '{task}' is a medium priority task with an unspecified time sensitivity.")
     case "low":
-        note = f"'{task}' is a low priority task."
-        
+        if time_bound == "yes":
+            print(f"\nReminder: '{task}' is a low priority task that requires immediate attention today!")
+        elif time_bound == "no":
+            print(f"\nNote: '{task}' is a low priority task that can be completed when you have free time.")
+        else:
+            print(f"\nReminder: '{task}' is a low priority task with an unspecified time sensitivity.")
     case _:
-        reminder = "Invalid priority level entered."
-        
-
-# Add time sensitivity if applicables
-if priority == "low":
-    if time_bound == "yes":
-        note += " that requires immediate attention today!"
-        print("\n Note:", note)
-    elif time_bound == "no":
-        note += " Consider completing it when you have free time."
-        print("\nNote:", note)
-    else:
-        note += " Time sensitivity was not specified correctly."
-        print("\nNote:", note)
-else:
-    if time_bound == "yes":
-        reminder += " that requires immediate attention today!"
-        print("\nReminder:", reminder)
-    elif time_bound == "no":
-        reminder += " Consider completing it when you have free time."
-        print("\nReminder:", reminder)
-    else:
-        reminder += " Time sensitivity was not specified correctly."
-        print("\nReminder:", reminder)
-
+        print("\nInvalid priority level entered.")
