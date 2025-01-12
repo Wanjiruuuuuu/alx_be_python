@@ -1,11 +1,7 @@
 
-# Global conversion factors (make sure they're defined at the start)
-try:
-    FAHRENHEIT_TO_CELSIUS_FACTOR
-    CELSIUS_TO_FAHRENHEIT_FACTOR
-except NameError:
-    FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-    CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+# Global conversion factors
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 # Conversion functions
 def convert_to_celsius(fahrenheit):
@@ -43,4 +39,3 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
-
